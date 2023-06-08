@@ -13,7 +13,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Slider from './components/Slider';
 import Prodetails from './components/Prodetails';
 
 
@@ -28,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Home",
-    element: <Slider/>,
+    element: <Home/>,
 
 
   },

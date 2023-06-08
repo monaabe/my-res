@@ -22,7 +22,7 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav  ms-auto">
-              <Link  className="nav-link active" aria-current="page" to="/Slider">
+              <Link  className="nav-link active" aria-current="page" to="/Home">
                 Home
               </Link>
               <Link className="nav-link" to="/About">
