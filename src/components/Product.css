@@ -1,22 +1,24 @@
 
 .card-body{
   height:300px;
-  width: 100%;
+  position: relative;
+
 
 }
 .card{
   overflow:hidden;
-  width:100%;
+  margin:20px
+
 }
 .card img{
 height:200px;
 width: 100%;
+object-fit: contain;
 
 }
 .card-body p{
   max-height: 20px;
   width:100%;
-  margin-bottom: 80px;
 }
 
 
@@ -28,3 +30,26 @@ width: 100%;
 .card-body Link{
   
 }
+
+.card-price{
+
+}
+
+.l1{
+  position:absolute;
+  margin-top:30%;
+  margin-left:23%;
+
+}
+
+/*@media(max-width:500px){
+
+  .card-body .l1 {
+    position:absolute;
+
+    margin-bottom:120%;
+    margin-left:23%;
+  
+    
+  }
+}*/

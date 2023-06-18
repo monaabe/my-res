@@ -9,8 +9,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Prodetails from './components/Prodetails';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '/node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 function App() {
   const api_url="https://fakestoreapi.com/products"
@@ -37,6 +37,7 @@ function App() {
     <div className="App">
       
       <>
+      
       
       <Navbar/>
 

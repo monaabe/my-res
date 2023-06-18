@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Product from "./Product";
+import { Link } from "react-router-dom";
 function ProductsList({products,getProducts,getCategories,categories,getProductInCategory}){
   useEffect(()=>{
 
@@ -9,11 +10,11 @@ function ProductsList({products,getProducts,getCategories,categories,getProductI
 
     
   return(
-    <>
+    <div className="buttons">
        {<button  onClick={()=>{
 
         getProducts()
-      }}>All</button>}
+      }}className="m-2 btn btn-primary">All</button>}
 
 
 
@@ -21,7 +22,7 @@ function ProductsList({products,getProducts,getCategories,categories,getProductI
       return <button key={cat} onClick={()=>{
 
         getProductInCategory(cat)
-      }}>{cat}</button>
+      }}className="m-2 btn btn-primary m-2">{cat}</button>
 
     })}
       
@@ -30,8 +31,10 @@ function ProductsList({products,getProducts,getCategories,categories,getProductI
       <div className="row">
         {products.map((product)=>{
           return(     
-               <div className="col-3" key={product.id}>
+               <div className="col-lg-3 col-md-6" key={product.id}>
+
           <Product product={product} showbutton={true}/>
+          
         </div>
         );
 
@@ -39,7 +42,7 @@ function ProductsList({products,getProducts,getCategories,categories,getProductI
       </div>
     </div>
 
-    </>
+    </div>
   );
 }
 
