@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import"./Navbar.css";
 
+
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary  fw-bold sticky-top ">
         <div className="container">
-          <Link className="navbar-brand fs-1 me-auto  fw-bold    " to="#" >
+          <Link className="navbar-brand fs-1 me-auto   text-danger   " to="#" >
             Resto
           </Link>
           <button
@@ -23,16 +24,16 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav  ms-auto">
-              <Link  className="nav-link active" aria-current="page" to="/Home">
+              <Link  className="nav-link   active   text-success" aria-current="page" to="/Home">
                 Home
               </Link>
-              <Link className="nav-link " to="/About">
+              <Link className="nav-link text-success " to="/About">
                 About
               </Link>
-              <Link className="nav-link" to="/Contact">
+              <Link className="nav-link  text-success" to="/Contact">
                 Contact us
               </Link>
-            </div>
+                     </div>
           </div> 
         </div>
       </nav>

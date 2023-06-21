@@ -7,8 +7,8 @@
 }
 .card{
   overflow:hidden;
-  margin:20px
 
+;
 }
 .card img{
 height:200px;
@@ -35,12 +35,12 @@ object-fit: contain;
 
 }
 
-.l1{
+/*.l1{
   position:absolute;
   margin-top:30%;
   margin-left:23%;
 
-}
+}*/
 
 /*@media(max-width:500px){
 
@@ -53,3 +53,6 @@ object-fit: contain;
     
   }
 }*/
+
+.card{
+}

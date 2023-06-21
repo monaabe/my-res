@@ -11,7 +11,6 @@ import Contact from './components/Contact';
 import Prodetails from './components/Prodetails';
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '/node_modules/bootstrap/dist/js/bootstrap.min.js';
-
 function App() {
   const api_url="https://fakestoreapi.com/products"
   const[categories,setCategories]=useState([])

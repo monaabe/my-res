@@ -26,25 +26,22 @@ function Product(props) {
   return (
     <>
       <div className=" container   ">
-<div className="row ">
-<div className=" ">
 
-        <div className="card  ">
+        <div className="card text-center    ">
           <img
             src={product && product.image}
-            className="card-img-top "
+            className="card-img-top mt-4"
             alt={product && product.title}
           />
           <div className="card-body ">
-            <h5 className="card-title ">{product && product.title}</h5>
+            <h5 className="card-title mt-4  fs-6 ">{product && product.title}</h5>
 
             {showbutton && (
-              <div className="l1  ">
                 <Link
                   //to={`/product/${product && product.id}`}
                                   to={`/product/${product.id}`}
 
-                  className="btn btn-primary  "
+                  className="btn btn-danger mt-5 "
                   onClick={toggleDescription}
                 >
                   Details
@@ -52,14 +49,11 @@ function Product(props) {
                 
                                 </Link>
 
-              </div>
             )}
           </div>
 
           
         </div>
-      </div>
-      </div>
       </div>
     </>
   );
